@@ -1,0 +1,143 @@
+<!&#68;DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Site about &lt;?xml-model?> processing instruction</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/navbar-fixed-top.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">&lt;?xml-model?></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#example">Example</a></li>
+            <li><a href="#spec">Specification</a></li>
+            <li><a href="#tools">Tools</a></li>
+            <li><a href="#credits">Credits</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div>
+        <h1>About &lt;?xml-model?></h1>
+
+        <p>&lt;?xml-model?> is processing instruction which can be
+        used for associating schema with an XML document. It can be
+        used for associating schema written in any schema language
+        (including RELAX NG, W3C XML Schema, DTD and Schematron) and
+        several schemas can be associated at the same time.</p>
+
+	<p>It is especially useful when ad-hoc schema has to be used
+	for document validation and it's impractical to setup schema 
+	association indirectly.</p>
+
+	<h1 id="example">Example</h1>
+
+	<p>Syntax of &lt;?xml-model?> processing instruction is
+	similar to a well known &lt;?xml-stylesheet?> processing
+	instruction. The simplest usage is just to
+	use <code>href</code> attribute to reference desired
+	schema.</p>
+
+	<pre>
+&lt;?xml version="1.0" encoding="utf-8"?>
+&lt;?xml-model href="my-schema.rng"?>
+&lt;document>
+  ...
+&lt;/document>
+	</pre>	
+
+	<h1 id="spec">Specification</h1>
+
+	<p>Specification for &lt;?xml-model?> was jointly developed by
+	the <a href="http://www.w3.org/">W3C</a>
+	and <a href="http://www.iso.org/iso/iso_technical_committee.html?commid=45374">ISO/IEC
+	JTC1/SC34</a>. Technically identical specification is
+	available from both places:</p>
+	
+	<ul>
+	  <li><a href="http://www.w3.org/TR/xml-model/">Associating
+	  Schemas with XML documents 1.0 (Third Edition)</a></li>
+	  <li><a href="http://standards.iso.org/ittf/PubliclyAvailableStandards/c054793_ISO_IEC_19757-11_2011.zip">ISO/IEC
+	  19757-11: Information technology — Document Schema
+	  Definition Languages (DSDL) — Part 11: Schema
+	  association</a> (please note that you have agree to ISO
+	  license before downloading standard for free from the ISO site)</li>
+	</ul>
+
+	<h1 id="tools">Tools supporting &lt;?xml-model?></h1>
+
+	<p>The following tools are supporting &lt;?xml-model?>
+	processing instruction:</p>
+
+	<ul>
+	  <li><a href="http://oxygenxml.com">oXygen XML Editor</a><br>
+	    <small><a href="http://www.oxygenxml.com/doc/ug-editor/concepts/oxygen-processing-instruction.html">Detailed
+	    information about support.</a></small>
+	  </li>
+	  <li><a href="http://xmlmind.com/xmleditor/">XMLmind XML Editor</a><br>
+	    <small><a href="http://www.xmlmind.com/xmleditor/_distrib/doc/rngsupport/specifying_a_schema.html">Detailed
+	    information about support.</a></small>
+	  </li>
+	  <li><a href="http://www.xmlblueprint.com">XMLBlueprint XML Editor</a><br>
+	    <small><a href="http://www.xmlblueprint.com/help/html/topic_192.htm">Detailed
+	    information about support.</a></small>
+	  </li>
+	</ul>
+
+	<p>If you know tool which supports &lt;?xml-model?> and it is
+	not listed here please <a href="mailto:jirka@kosek.cz">let me know</a>.</p>
+
+	<h1 id="credits">Credits</h1>
+
+	<p>This site is maintained
+	by <a href="mailto:jirka@kosek.cz">Jirka Kosek</a>. I am
+	member of <a href="http://xmlguild.org">XML Guild</a> and my
+	XML related thoughts can be found on my <a href="http://xmlguru.cz">blog</a>.</p>
+
+      </div>
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
